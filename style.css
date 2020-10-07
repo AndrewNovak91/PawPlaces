@@ -1,0 +1,21 @@
+.cont {
+    background-color: blue;
+    border-bottom: darkslategrey;
+}
+.jumbotron {
+    background-color: cornflowerblue;
+    flex-direction: row;
+}
+.container-fluid {
+    background-color: darkcyan;
+    border: darkmagenta;
+    position: absolute;
+}
+.card-img-right {
+    height: 280px;
+}
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}

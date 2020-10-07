@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="reset.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!-- Current weather -->
+<div class= "cont">
+  <div class= "row">
+    <div class= "col-md-5"></div>
+    <div class= "col-md-5">
+      <div class= "row">
+        <h2>Search for weather report in your city</h2>
+      </div>
+
+      <div class="row">
+        <input type="text" class="inputText">
+       <input type="submit" value="Submit" class="button">
+      </div>
+
+      <div class="display">
+        <h1 class="name"></h1>
+        <p class="desc"></p>
+        <p class="temp"></p>
+      </div>
+        
+      </div>
+    </div>
+  </div>
+
+<!--Jumbotron for Synopsis-->
+  <div class="jumbotron">
+    <h1 class="display-4 text-center">Paw Places</h1>
+    <h3 class="lead text-center"> Place to search where to take your pups to play, eat,  etc.</h3>
+    <hr class="my-4">
+    <p>This website uses several APIs. The first is a server-side API called OpenWeather. which is used at the top of the page. When a user enters their location and clicks on the search button, the OpenWeather API
+      makes an AJAX call and posts the location name, temperature, and general weather description.</p>
+      <br>
+    <p>
+      The second server-side API used is the Google Places API. We make an AJAX call to Google Places, giving it the latitude and longitude of Cleveland, Ohio as the location. From there, search parameters include limiting results
+      to 1500 miles as well as searching for two specific types of location: parks and restaurants. Finally, a "dog-friendly" paramter is added to ensure that locations that are returned are in fact
+      places you can bring your pup.
+    </p>
+      <br>
+    <p>
+      Finally, a third-party API through GIPHY.com provides us with generated .gif files to use as markers for the two cards pertaining to restaurants and parks at the bottom of the page as well as generating a loading jumbotron above them.
+    </p>
+  </div>
+
+  <!--Dog Gif-->
+  <div class="jumbotron dogGif" alt="Dog Gif here!">
+   
+  </div>
+  
+  <!-- Cards-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card" style="width: 18rem;">
+          <img src="https://media0.giphy.com/media/3o7bujxQriRWRRRJpS/giphy.gif?cid=ecf05e478z7wm26uiuhve6lyrwualg4yu9eyq4tv1ny8ciss&rid=giphy.gif"
+           class="card-img-left" alt="Gif here...">
+          <div class="card-body">
+            <h5 class="card-titl text-center">Parks</h5>
+            <div id="listBody1">
+             <ul id="parks_list">
+             </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card" style="width: 18rem;">
+          <img src="https://media4.giphy.com/media/3oEduNk919NdTwbVHG/giphy.gif?cid=ecf05e473nt5j3yihhnuofuefx4o2b1mbo6m9f60xgqnsem8&rid=giphy.gif"
+           class="card-img-right" alt="Gif here...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Restaurants</h5>
+            <div id="listBody2">
+             <ul id="rest_list">
+            </ul>
+            </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
