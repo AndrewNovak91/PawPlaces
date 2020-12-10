@@ -1,21 +1,11 @@
-.cont {
-    background-color: blue;
-    border-bottom: darkslategrey;
+.pt-3, .py-3 {
+    padding-top: 1rem !important;
 }
-.jumbotron {
-    background-color: cornflowerblue;
-    flex-direction: row;
-}
-.container-fluid {
-    background-color: darkcyan;
-    border: darkmagenta;
-    position: absolute;
-}
-.card-img-right {
-    height: 280px;
-}
-.card {
-    margin: 0 auto; /* Added */
-    float: none; /* Added */
-    margin-bottom: 10px; /* Added */
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
