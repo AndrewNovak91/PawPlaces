@@ -56,24 +56,27 @@
 </header>
 
 
-<!--Jumbotron for Synopsis-->
-  <div class="jumbotron">
-    <h1 class="display-4 text-center">Paw Places</h1>
-    <h3 class="lead text-center"> Place to search where to take your pups to play, eat,  etc.</h3>
-    <hr class="my-4">
-    <p>This website uses several APIs. The first is a server-side API called OpenWeather. which is used at the top of the page. When a user enters their location and clicks on the search button, the OpenWeather API
-      makes an AJAX call and posts the location name, temperature, and general weather description.</p>
-      <br>
-    <p>
-      The second server-side API used is the Google Places API. We make an AJAX call to Google Places, giving it the latitude and longitude of Cleveland, Ohio as the location. From there, search parameters include limiting results
-      to 1500 miles as well as searching for two specific types of location: parks and restaurants. Finally, a "dog-friendly" paramter is added to ensure that locations that are returned are in fact
-      places you can bring your pup.
-    </p>
-      <br>
-    <p>
-      Finally, a third-party API through GIPHY.com provides us with generated .gif files to use as markers for the two cards pertaining to restaurants and parks at the bottom of the page as well as generating a loading jumbotron above them.
-    </p>
+<!--About-->
+<section class="page-section bg-rimary" id="about">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="text-white mt-0">About the project!</h2>
+        <hr class="divider light my-4">
+        <p class="text-white-50 mb-4">
+          "This website uses several APIs. The first is a server-side API called OpenWeather. which is used at the top of the page. When a user enters their location and clicks on the search button, the OpenWeather API
+          makes an AJAX call and posts the location name, temperature, and general weather description."
+          <br>
+          "The second server-side API used is the Google Places API. We make an AJAX call to Google Places, giving it the latitude and longitude of Cleveland, Ohio as the location. From there, search parameters include limiting results
+          to 1500 miles as well as searching for two specific types of location: parks and restaurants. Finally, a "dog-friendly" paramter is added to ensure that locations that are returned are in fact
+          places you can bring your pup."
+          <br>
+          "Finally, a third-party API through GIPHY.com provides us with generated .gif files to use as markers for the two cards pertaining to restaurants and parks at the bottom of the page as well as generating a loading jumbotron above them."
+        </p>
+      </div>
+    </div>
   </div>
+</section>
 
   <!--Dog Gif-->
   <div class="jumbotron dogGif" alt="Dog Gif here!">
