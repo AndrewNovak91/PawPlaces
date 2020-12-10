@@ -25,23 +25,6 @@ $(document).ready(function() {
  
   });
 
-
-  // giphy API
-var giphyURL = "https://api.giphy.com/v1/gifs/search?q=funny+dog&api_key=eUdl8lLKA2perpUVPr1CqVdDtpKVVPMP&limit=20";
-$.ajax({
-  url: giphyURL,
-  method: "GET"
-})
-.then(function(response) {
-  console.log(response);
-  var results = response.data;
-  for(i = 0; i < 5; i++) {
-    var addGif = $("<img>").addClass("giphyImage").attr("src",response.data[i].images.original.url);
-    $(".dogGif").append(addGif);
-  }
-  console.log(response.data[i].url);
-});  
-
   // Google Maps API search for Parks
   var parkURL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.4993,-81.6944&radius=1500&type=park&keyword=dog-friendly&key=AIzaSyDcao6rtH4hlXDKhZNtUPkNZKGsMKXMiMc"
   $.ajax({
